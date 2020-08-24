@@ -1,0 +1,23 @@
+{
+  "name": "reasonml-hello-task",
+  "version": "0.1.0",
+  "sources": {
+    "dir" : "src",
+    "subdirs" : true
+  },
+  "package-specs": {
+    "module": "commonjs",
+    "in-source": true
+  },
+  "suffix": ".bs.js",
+  "bs-dependencies": [
+"decco" , "bs-let"
+  ],
+  "ppx-flags":["decco/ppx" , "bs-let/ppx"],
+  
+  "warnings": {
+    "error" : "+101"
+  },
+  "namespace": true,
+  "refmt": 3
+}
